@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/tab.css"/>
+</head>
+<body>
+<div class="content">
+    <div class="tab">
+        <ul>
+            <li class="selected">娱乐</li>
+            <li>笑话</li>
+            <li>电影</li>
+        </ul>
+    </div>
+    <div class="tab-box">
+        <div class="txt">
+            课程简介：本课程详细介绍网页页面中最流行常用的tab切换效果，包括滑动、点击切换，延迟切换及自动切
+            换等多种效果。其中重点讲解settimeout和setinterval的区别，以及使用JavaScript、jQuery等技术实现tab
+            切换特效。
+        </div>
+        <div class="txt">
+            课程大纲： 第1章滑动、点击切换效果实现 1-1课程简介 1-2tab页面布局-标题布局 1-3tab页面布局-内容
+            布局 1-4js实现切换效果 1-5编程练习 第2章延迟切换效果
+        </div>
+        <div class="txt" >
+            2-1js实现延迟切换 第3章自动切换效果 3-1js实现自动切换实现 3-2加入手动切换功能及代码优化 3-3bug解决...
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="tab1">
+        <ul>
+            <li class="selected">娱乐</li>
+            <li>笑话</li>
+            <li>电影</li>
+            <li>音乐</li>
+        </ul>
+    </div>
+    <div class="tab-box1">
+        <div class="txt">
+            课程简介：本课程详细介绍网页页面中最流行常用的tab切换效果，包括滑动、点击切换，延迟切换及自动切
+            换等多种效果。其中重点讲解settimeout和setinterval的区别，以及使用JavaScript、jQuery等技术实现tab
+            切换特效。
+        </div>
+        <div class="txt">
+            课程大纲： 第1章滑动、点击切换效果实现 1-1课程简介 1-2tab页面布局-标题布局 1-3tab页面布局-内容
+            布局 1-4js实现切换效果 1-5编程练习 第2章延迟切换效果
+        </div>
+        <div class="txt" >
+            2-1js实现延迟切换 第3章自动切换效果 3-1js实现自动切换实现 3-2加入手动切换功能及代码优化 3-3bug解决...
+        </div>
+        <div class="txt">
+            jquery实现简单的Tab切换菜单
+            jquery表格可编辑修改表格里面的值,点击td变...
+        </div>
+    </div>
+</div>
+<script src="js/jquery.1.10.2.js"></script>
+<script src="js/jquery.tab.js"></script>
+<script>
+$(function(){
+        $(".tab").tab({
+            'eventName':'mouseover',
+            'interval':5000
+        });
+        $(".tab1").tab({
+            'parentToChild':".tab-box1>div",
+            'interval':5000
+        });
+})
+</script>
+</body>
+</html>

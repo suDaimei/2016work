@@ -1,0 +1,59 @@
+html,body,div,h2,p{
+  margin: 0;
+}
+p,h2{
+  padding: 10px;
+}
+#bg{
+  width: 100%;
+  overflow: hidden;
+}
+.mn{
+  border: solid #E44108 1px;
+}
+.sd{
+  border: solid #605941 1px;
+}
+@media only screen and (max-width: 1600px) {
+  .mn,.sd{
+    margin: 1%;
+  }
+  .mn{
+    width: 59%;
+    float: left;
+  }
+  .sd{
+    width: 36%;
+    float: right;
+  }
+}
+@media only screen and (max-width:980px){
+  .mn,.sd{
+    display: inline-block;
+  }
+  .mn{
+    width: 52%;
+    float: left;
+    margin: 2% 1% 2%;
+  }
+  .sd{
+    width: 36%;
+    float: none;
+    margin: 2% 1% 0 0;
+  }
+}
+@media only screen  and (max-width:700px){
+  .mn{
+    width: 100%;
+    float:none;
+    margin: 0;
+  }
+  .sd{
+    width: 100%;
+  }
+}
+@media only screen and(max-width:480px){
+  .sd{
+    display: none;
+  }
+}

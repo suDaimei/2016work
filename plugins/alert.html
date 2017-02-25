@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input id="input1" type="text">
+<div style="height: 200px;">高度200</div>
+<div style="height: 600px;">高度600</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    (function($){
+        $.fn.alertWhileClick=function(){//点击input弹出警告窗
+            $(this).click(function(){
+                alert($(this).val());
+            });
+        };
+//        $.fn.maxHeight=function(){
+//            var max=0;
+//            this.each(function(){
+//                max=Math.max(max,$(this).height());
+//            });
+//            return max;
+//        };
+    })(jQuery);
+
+    $("#input1").alertWhileClick();
+//    $("div").maxHeight();
+</script>
+</body>
+</html>

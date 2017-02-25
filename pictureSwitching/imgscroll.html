@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/imgscroll.css"/>
+</head>
+<body>
+<div id="container">
+    <div id="J_Promo" >
+        <ul id="J_Box" class="scroll">
+            <li class="mod"><img src="image/1.jpg" alt="图片1"/></li>
+            <li class="mod"><img src="image/2.jpg" alt="图片2"/></li>
+            <li class="mod"><img src="image/3.jpg" alt="图片3"/></li>
+            <li class="mod"><img src="image/4.jpg" alt="图片4"/></li>
+            <li class="mod"><img src="image/5.jpg" alt="图片5"/></li>
+        </ul>
+    </div>
+    <div id="slider-nav">
+        <p>
+            <span class="cur">&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+        </p>
+
+        <div id="slider-page">
+            <a href="javascript:" class="slider-prev"> < </a>
+            <a href="javascript:" class="slider-next"> > </a>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.1.10.2.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/imgscroll.js"></script>
+<!--<script src="js/jquery.imgscroll.js"></script>-->
+<!--<script>-->
+    <!--$(function(){-->
+        <!--var $container = $("#container"),//获取包含滚动内容的整个容器-->
+                <!--$J_Box = $("#J_Box"),//获取滚动内容的容器-->
+                <!--$J_BoxW= $J_Box.width(),-->
+                <!--$J_BoxLi = $J_Box.find("li"),//获取图片所在的容器-->
+                <!--$J_BoxLiW = $J_BoxLi.width(),//获取图片所在的容器的宽-->
+                <!--$sliderNav = $("#slider-nav").find("span"),//获取切换圆点元素-->
+                <!--$sliderPrev = $(".slider-prev"),//获取左箭头元素-->
+                <!--$sliderNext=$(".slider-next");//获取右箭头元素-->
+        <!--$J_Box.scrollImg({-->
+            <!--'parentWidth':$J_BoxW,-->
+            <!--'scrollWidth':$J_BoxLiW,-->
+            <!--'preSelector':$sliderPrev,-->
+            <!--'nextSelector':$sliderNext,-->
+            <!--'sliderNav':$sliderNav-->
+        <!--})-->
+    <!--})-->
+<!--</script>-->
+
+</body>
+</html>

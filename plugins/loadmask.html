@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{font-size: 12px;}
+        input{outline: none;}
+        #ifra{border: solid 1px #555; width: 260px; height: 160px;}
+        #title{text-align: center;}
+        #content{padding: 10px;width: 240px;  height: 114px; background-color: #FFF;}
+        .txt{ border: #666 1px solid;padding: 2px; width: 150px;  margin-right: 3px;}
+        .btn{border: #666 1px solid;padding: 2px;width:80px; cursor: pointer;
+            filter: progid:DXImageTransform.Microsoft.Gradient(enabled=true,GradientType=0,StartColorStr=#FFFFFF,EndColorStr=#ECE9D8)
+            }
+        #sbtUser{margin-top: 10px;}
+    </style>
+
+</head>
+<body>
+<div id="ifra">
+    <div id="title">
+        <input type="button" value="开始" id="btnStart" class="btn"/>
+        <input type="button" value="结束" id="btnEnd" class="btn"/>
+        <input type="button" value="延时" id="btnDelay" class="btn"/>
+    </div>
+    <div id="content">
+        用户名:<br>
+        <input type="text" id="username" name="username" class="txt"/>
+        <i style="color:red" >*</i><br>
+        密码:<br>
+        <input type="password" id="password" name="password" class="txt"/>
+        <i style="color:red" >*</i><br>
+        <input id="sbtUser" type="submit" value="提交" class="btn"/>
+    </div>
+</div>
+
+<script src="js/jquery.1.10.2.js"></script>
+<script src="js/jquery.loadmask.js"></script>
+<script>
+    $(function(){
+        $("#btnStart").click(function(){
+            $("#content").mask("正在加载……",1000);
+        });
+
+        $("#btnEnd,#content").click(function(){
+            $("#content").unmask();
+        })
+    });
+</script>
+</body>
+</html>

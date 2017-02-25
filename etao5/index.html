@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<!--[if IE 6]>
+<div id="kie-bar" class="kie-bar">
+    您现在使用的浏览器版本过低，可能会导致部分图片和信息的缺失。请立即 <a href="http://www.microsoft.com/china/windows/IE/upgrade/index.aspx"
+                                         class="kie-setup-IE8" seed="kie-setup-IE8" target="_blank" title="免费升级至IE8浏览器">免费升级</a>
+    或下载使用 <a href="http://browser.taobao.com/" class="kie-setup-taoBrowser" seed="kie-setup-taoBrowser" target="_blank"
+             title="淘宝浏览器">淘宝浏览器</a> ，安全更放心！ <a title="查看帮助" target="_blank" seed="kie-setup-help"
+                                                href="http://help.alipay.com/lab/help_detail.htm?help_id=260579">查看帮助</a>
+</div>
+<![endif]-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="js/ltie9.js"></script><![endif]-->
+</head>
+
+<body>
+<header class="header">
+    <nav class="nav">
+        <ul class="clearfix">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">海淘</a></li>
+            <li><a href="#">小栈</a></li>
+            <li class="icon-new"><a href="#">特卖</a></li>
+            <li><a href="#">必买清单</a></li>
+            <li>
+                <a href="#" class="nav-last">手机一淘
+                    <i class="code-small"></i>
+                    <div class="code">
+                         <img src="img/codeq.png" alt=""/>手机购买
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header-bd">
+        <div class="logo">
+            <h1><a href="#"></a></h1>
+        </div>
+        <div class="common-search">
+            <input type="text" class="search-txt" placeholder="买什么，问一淘"/>
+            <button type="submit" class="submit">搜索</button>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="reg">注册</a>
+            <div class="my-login">
+                <a href="#">登录<i class="icon iconfont icon-login">&#xe601;</i></a>
+                <ul class="nav-list">
+                    <li><a href="#">淘宝登录</a></li>
+                    <li><a href="#">支付宝登录</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+<section class="content">
+    <div class="search-category">
+        <div id="hp-holder"></div>
+        <div class="search-wrap">
+            <div class="category-nav">
+                <ul class="hp-channels">
+                    <li class="item">
+                        <h3>特色推荐</h3>
+
+                        <p>
+                            <a href="#">一淘特卖</a>
+                            <a href="#">海淘代购</a>
+                            <a href="#">海外优惠速递</a>
+                            <a href="#">优惠爆料</a>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <h3>兴趣小栈</h3>
+
+                        <p>
+                            <a href="#">薅羊毛</a>
+                            <a href="#">玩车一族</a>
+                            <a href="#">围城烦恼</a>
+                            <a href="#">靓妈童萌</a>
+                            <a href="#">海淘大杂院</a>
+                            <a href="#">查看全部</a>
+                        </p>
+
+                    </li>
+                    <li class="item">
+                        <h3>好货分类</h3>
+
+                        <p>
+                            <a href="#">母婴用品</a>
+                            <a href="#">美容护肤</a>
+                            <a href="#">数码家电</a>
+                            <a href="#">营养保健</a>
+                            <a href="#">好货必买清单</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="ad-left">
+                <a href="#"><img src="img/ad.png" alt="ad"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="category-wrap top-fix chs">
+            <ul class="clear-fix">
+                <li class="list-item"><a class="category-wrap-on" href="#">全部</a></li>
+                <li class="list-item"><a href="#">热门</a></li>
+                <li class="list-item"><a href="#">海淘</a></li>
+                <li class="list-item"><a href="#">淘宝/天猫</a></li>
+                <li class="list-item"><a href="#">B2C</a></li>
+                <li class="list-item"><a href="#">白菜</a></li>
+                <li class="list-item"><a href="#">男装/女装</a></li>
+                <li class="list-item"><a href="#">童装/母婴</a></li>
+                <li class="list-item"><a href="#">食品/家居</a></li>
+                <li class="list-item"><a href="#">鞋包/饰品</a></li>
+                <li class="list-item"><a href="#">数码/家电</a></li>
+                <li class="list-item"><a href="#">美容/护肤</a></li>
+                <li class="list-item"><a href="#">运动/户外</a></li>
+            </ul>
+        </div>
+
+        <div class="content-category">
+            <ul class="cc-items">
+                <li class="cc-list-item"><a class="cc-nav" href="#">今日推荐</a></li>
+                <li class="cc-list-item"><a class="cc-navh" href="#">海淘
+                    <i class="cc-list-item-border"></i>
+                </a></li>
+
+                <li class="cc-list-item"><a href="#">9.9元</a></li>
+            </ul>
+            <div class="search-icon">
+                <i class="icon iconfont">&#xe600;</i>
+            </div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="content-pannel">
+                <div class="cat-container">
+                    <div class="category-wrap">
+                        <ul class="clear-fix">
+                            <li class="list-item"><a class="category-wrap-on" href="#">全部</a></li>
+                            <li class="list-item"><a href="#">热门</a></li>
+                            <li class="list-item"><a href="#">海淘</a></li>
+                            <li class="list-item"><a href="#">淘宝/天猫</a></li>
+                            <li class="list-item"><a href="#">B2C</a></li>
+                            <li class="list-item"><a href="#">白菜</a></li>
+                            <li class="list-item"><a href="#">男装/女装</a></li>
+                            <li class="list-item"><a href="#">童装/母婴</a></li>
+                            <li class="list-item"><a href="#">食品/家居</a></li>
+                            <li class="list-item"><a href="#">鞋包/饰品</a></li>
+                            <li class="list-item"><a href="#">数码/家电</a></li>
+                            <li class="list-item"><a href="#">美容/护肤</a></li>
+                            <li class="list-item"><a href="#">运动/户外</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="recommend">
+                        <em>我要推荐</em>
+                        <span>采用有大奖金</span>
+                    </a>
+                </div>
+                <div class="feed-list-item">
+                    <div class="feed-page">
+                        <div class="feed feed-hot">
+                            <i class="feed-icon"></i>
+                            <a href="#"> 3.27卖品牌推荐 柒牌男装品牌特卖最低1.9折起</a>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">不单单薄，不单单美----
+                                            <strong class="feed-title-em"> ELIFE S7开箱体验 S7不仅仅是薄还有....</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        国内手机品牌众多，各品牌纷纷使出浑身解数来圈占手机市场，如何真正的打动人心，使品牌
+                                        深入人心，其实以普通消费者来说，厂家实在，机器实在，性价比实在，一定会赢得许多消费
+                                        者的心。金立品牌自创立之初，其以“金品质、立天下”为口号，用产品说话，在手机品牌林
+                                        立的国内市场中，也占据了一席之地，其2015年...
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/fx.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">【品牌馆】3月27日优惠商品推荐
+                                            <strong class="feed-title-em">美的电烤箱32L 329元包邮</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        大家好哇~今天周五小淘更新哈~原创爆料只要符合品牌馆定位，价格有优势，一定优先推荐！
+                                        不是首发的是没有奖励的~还有只扔个链接上来不写商品推荐的也是不接收的~喜欢品牌馆的亲
+                                        们记得为我们点赞哦~品牌馆每天为你推荐性价比最高的品牌商品，大家一起爆料吧！
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/pinp.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">去四川旅游一定要带回的特色特产
+                                            <strong class="feed-title-em">口味重的童靴赶紧进来一起扒</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        “食在中国，味在四川”之说，而成都更是被联合国教科文组织授予亚洲唯一“美食之都”的
+                                        称号。牛肉干、香肠腊肉虽然也有特点，但是很多地方都太容易买到。推荐正宗郫县豆瓣酱、麻
+                                        辣干锅调料，水煮鱼调料、汉源花椒、自己配面的调料等，还有什么空缺等你来分享给，补
+                                        全清单哦
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/chi.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">每个女人都有一个高跟鞋梦
+                                            <strong class="feed-title-em">晒晒美美的高跟鞋	你的鞋柜里有一双高跟鞋吗？</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        每个女人都有一个高跟鞋梦，这话一点都不假。穿高跟鞋的女人，性感、梦幻、妩媚，那些亮闪
+                                        闪细小小的高跟衬托出的一份优雅，光是看着都觉得美好。有时候买鞋会说 “要是不是高跟的就
+                                        好了”，其实喜欢那双鞋，也许就是冲着那个高跟去的。你的鞋柜里有这样一双美美的高跟鞋吗？
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/xie.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">最受欢迎的水果大盘点
+                                            <strong class="feed-title-em">吃水果 第一考虑健康还是味道？</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        水果是我们日常不可或缺的美味，每个人爱吃的水果各有不同，有的人爱吃苹果，因为苹果
+                                        含有多种维生素，健康减肥佳品，有的人爱吃被誉为 “水果之王”榴莲，吃一口根本停不下
+                                        来；聊聊你最爱吃哪种水果？ 每次能吃多少？吃水果的时候，第一考虑的是健康还是味道呢？
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/gg.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="feed">
+                            <div class="feed-detail">
+                                <div class="feed-info">
+                                    <h3>
+                                        <a href="#">说说你最喜欢的运动品牌
+                                            <strong class="feed-title-em">为什么？	我从来没买过耐克</strong></a>
+                                    </h3>
+
+                                    <p>
+                                        小编我先说自己的，我从小到大一直阿迪达斯的忠实粉丝，忠实到了什么程度呢？忠实到了压
+                                        根就没买过耐克的的地步，虽然想想也是醉了，但是真心非常喜欢阿迪达斯的三道杠设计，没
+                                        啥过多的理由。当然小编我还会购买始祖鸟 北面之类的户外品牌哦
+                                    </p>
+                                </div>
+                                <a href="#" class="feed-img"><img src="img/adidas.jpg" alt=""/></a>
+                            </div>
+                            <div class="feed-footer">
+                                作者: <a class="author" href="#">桃子</a> 03-15
+                                 <span class="feed-link">
+                                     <a href="#">赞152</a>
+                                     <a href="#">评论122</a>
+                                     <a href="#">分享</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-modules">
+        <div class="mod-wrap">
+            <div class="sign">
+                <a href="#"><img src="img/erwei.png" alt=""/></a>
+            </div>
+            <div class="sign-in">
+                <div class="reveice">
+                    <a href="#">签到</a>
+                    <i class="reveice-icon"></i>
+                </div>
+            </div>
+            <p class="hpc-clear">0点/7点/15点 <br/>三个时段发放更多集分宝</p>
+        </div>
+        <div class="mod-wrap">
+            <div class="sign mod-wrap-ad">
+                <a href="#"><img src="img/adr.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="mod-wrap">
+            <div class="mod-wrap-intro">
+                <a href="#"><img src="img/haoym.png" alt=""/></a>
+                <a href="#" class="intro-in"></a>
+            </div>
+            <ul class="intro-bd">
+                <li><a href="#">爆料采用奖励300-1000集分宝</a></li>
+                <li><a href="#">每日理财播报 省钱赚钱理财</a></li>
+                <li><a href="#">新鲜数码试用 败家男研究所</a></li>
+            </ul>
+        </div>
+        <div class="mod-wrap mod-user mod-hidden">
+            <div class="sign">
+                <div class="mod-user-hd">
+                    <h4>小栈好贴</h4>
+                    <a href="#">更多</a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="user-img">
+                            <a href="#"><img src="img/user1.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info">
+                            <p class="user-link"><a href="#">每日超值优惠信息尽在:</a></p>
+
+                            <p class="user-url"><a href="#">薅羊毛小栈</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user-img">
+                            <a href="#"><img src="img/user2.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info">
+                            <p class="user-link"><a href="#">不可忽视的安全座椅</a></p>
+
+                            <p class="user-url"><a href="#">靓吗童萌小栈</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user-img">
+                            <a href="#"><img src="img/user3.jpeg" alt=""/></a>
+                        </div>
+                        <div class="user-info">
+                            <p class="user-link"><a href="#">帖子加精奖励100集分宝</a></p>
+
+                            <p class="user-url"><a href="#">站务讨论小栈</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mod-wrap mod-user-we mod-hidden">
+            <div class="sign">
+                <div class="mod-user-hd">
+                    <h4>薅羊毛达人</h4>
+                </div>
+                <ul>
+                    <li>
+                        <div class="user-img-we">
+                            <a href="#"><img src="img/user4.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info-we">
+                            <p class="user-link-we"><a href="#">美妆馆</a></p>
+
+                            <p class="user-url-we"><a href="#">白兔和小红帽总管</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user-img-we">
+                            <a href="#"><img src="img/user5.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info-we">
+                            <p class="user-link-we"><a href="#">小坤-</a></p>
+
+                            <p class="user-url-we"><a href="#">暖男,护肤品偏执爱好者</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user-img-we">
+                            <a href="#"><img src="img/user6.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info-we">
+                            <p class="user-link-we"><a href="#">冰柠檬mm</a></p>
+
+                            <p class="user-url-we"><a href="#">母婴白菜馆主编之一</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="user-img-we">
+                            <a href="#"><img src="img/user7.jpg" alt=""/></a>
+                        </div>
+                        <div class="user-info-we">
+                            <p class="user-link-we"><a href="#">小鱼鳍</a></p>
+
+                            <p class="user-url-we"><a href="#">埋头女装馆,一路不易,及其宅</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mod-wrap mod-hidden">
+            <div class="sign mod-wrap-ad mod-wrap-adr">
+                <a href="#"><img src="img/adr1.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-bd">
+        <div class="footer-list justify wo-justify">
+            <dl class="footer-item footer-item-first">
+                <dt>关于我们</dt>
+                <dd><a href="#">关于一淘</a></dd>
+                <dd><a href="#">免责声明</a></dd>
+                <dd><a href="#">诚聘英才</a></dd>
+            </dl>
+            <dl class="footer-item">
+                <dt>帮助中心</dt>
+                <dd><a href="#">新手指南</a></dd>
+                <dd><a href="#">智能客服</a></dd>
+                <dd><a href="#">廉政邮箱</a></dd>
+            </dl>
+            <dl class="footer-item">
+                <dt>手机一淘</dt>
+                <dd><a href="#"> <img src="img/cdo.jpg" alt="手机一淘"/></a></dd>
+            </dl>
+            <dl class="footer-item">
+                <dt>精选频道</dt>
+                <dd><a href="#">一套特卖</a></dd>
+                <dd><a href="#">海淘代购</a></dd>
+                <dd><a href="#">优惠推荐</a></dd>
+            </dl>
+            <dl class="footer-item footer-item-last">
+                <dt>网站地图</dt>
+                <dd><a href="#">必买清单</a></dd>
+                <dd><a href="#">热门商品</a></dd>
+                <dd><a href="#">小栈精选</a></dd>
+            </dl>
+        </div>
+        <div class="footer-link">
+            <div class="link-list">
+                <a class="dib" href="#">阿里巴巴</a>
+                <a class="dib" href="#">淘宝网</a>
+                <a class="dib" href="#">聚划算</a>
+                <a class="dib" href="#">全球速卖通</a>
+                <a class="dib" href="#">阿里巴巴国际交易市场</a>
+                <a class="dib" href="#">1688</a>
+                <a class="dib" href="#">阿里妈妈</a>
+                <a class="dib" href="#">阿里旅行·去啊</a>
+                <a class="dib" href="#">阿里云计算</a>
+                <a class="dib" href="#">YunOS</a>
+                <a class="dib" href="#">阿里通信</a>
+                <a class="dib" href="#">万网</a>
+                <a class="dib" href="#">高德</a>
+                <a class="dib" href="#">优视</a>
+                <a class="dib" href="#">友盟</a>
+                <a class="dib" href="#">酷盘</a>
+                <a class="dib" href="#">虾米</a>
+                <a class="dib" href="#">天天动听</a>
+                <a class="dib" href="#">来往</a>
+                <a class="dib" href="#">钉钉</a>
+                <a class="dib" href="#">11 Main</a>
+                <a class="dib" href="#">支付宝</a>
+
+            </div>
+            <p>Copyright © 2010-2015 ETAO.COM 版权所有</p>
+            <p>增值电信业务经营许可证：浙B2-20080224</p>
+        </div>
+
+    </div>
+
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

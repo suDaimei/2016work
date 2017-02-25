@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.1.10.2.js"></script>
+    <style>
+        body{font-size: 12px}
+        img{border: solid 1px #ccc; padding: 3px;margin: 5px}
+        /*span{border: solid 2px #084350}*/
+    </style>
+    <script>
+        $(function(){
+            $("img").appendTo($("span"));
+            $("span").after(retHtml());
+            function retHtml(){
+                var str="<span><b>wireefjkdshgksj jfksfjk fsd</b></span>";
+                return str;
+            }
+        })
+    </script>
+</head>
+<body>
+<img title="122" src="image/1.png"/>
+<span>
+    <img title="2532" src="image/2.png"/>
+</span>
+</body>
+</html>

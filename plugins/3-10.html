@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#Button1").click(function(){
+                var $str1=$("#select1").val();
+                var $str2=$("#text1").val();
+                var $str3=$("#select2").val();
+                var $str4=$("#text2").val();
+                var $div=$("<"+$str1+" "+$str3+"='"+$str4+"'>"+$str2+"</"+$str1+">");
+                $(".divR").show().append($div);
+
+//                $(".divR").append(retHtml());
+//                function retHtml(){
+//                    var str="<b>write less do d</b>";
+//                    return str;
+//                }
+
+
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="divL">
+    <p></p>
+    <ul>
+        <li>元素名：
+            <select id="select1">
+                <option value="p">p</option>
+                <option value="div">div</option>
+            </select>
+        </li>
+        <li>
+            内容为：
+            <input type="text" id="text1" class="txt"/>
+        </li>
+        <li>
+            属性名：
+            <select id="select2">
+                <option value="title">title</option>
+            </select>
+        </li>
+        <li>
+            属性值：
+            <input id="text2" class="txt" type="text"/>
+        </li>
+        <li style="text-align: center;padding-top:5px">
+            <input id="Button1" type="button" value="创建" class="btn"/>
+        </li>
+    </ul>
+</div>
+<div class="divR"></div>
+</body>
+</html>

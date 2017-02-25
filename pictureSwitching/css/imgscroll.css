@@ -1,0 +1,84 @@
+body,
+div,
+ul,
+li,
+a,
+i,
+img,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#container {
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+#J_Promo {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+#J_Box {
+  width: 4200px;
+}
+#J_Box li {
+  width: 600px;
+  float: left;
+}
+#slider-nav {
+  margin-top: -20px;
+  text-align: center;
+}
+#slider-nav p {
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+}
+#slider-nav span {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: solid 1px #BABABA;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: rgba(186, 186, 186, 0);
+}
+#slider-nav span.cur {
+  background-color: #BABABA;
+}
+#slider-page a {
+  position: absolute;
+  color: #FFF;
+  top: 50%;
+  z-index: 2;
+  width: 25px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -40px;
+  background: #808080;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#slider-page a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+#slider-page a.slider-prev {
+  left: 0;
+}
+#slider-page a.slider-next {
+  right: 0;
+}

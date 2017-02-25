@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{font-size: 12px}
+        div{display: none;}
+        select{height: 65px;}
+        .clsIpt{width: 100px;padding: 3px}
+        .GetFocus{border: solid 1px #007FCF;
+            background-color: #2988EC;}
+    </style>
+    <script src="js/jquery.1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#divA").show(3000);
+            $("#form1 input:enabled").addClass("GetFocus");
+        })
+        $(function(){
+            $("#divA").show(3000);
+            $("#form1 input:disabled").addClass("GetFocus");
+        })
+        $(function(){
+            $("#divB").show(3000);
+            $("#form1 input:checked").addClass("GetFocus");
+        })
+        $(function(){
+            $("#divC").show(3000);
+            $("#span2").html("选中项是："+$("select option:selected").text());
+        })
+    </script>
+</head>
+<body>
+<form action="" id="form1">
+    <div id="divA">
+        <input type="text" value="可用文本框" class="clsIpt"/>
+        <input type="text" disabled="disabled" value="不可用文本框" class="clsIpt"/>
+    </div>
+    <div id="divB">
+        <input type="checkbox" checked="checked" value="1"/>选中
+        <input type="checkbox" value="0"/>
+    </div>
+    <div id="divC">
+        <select multiple="multiple">
+            <option value="0">Item 0</option>
+            <option value="1" selected="selected">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3" selected="selected">Item 3</option>
+        </select>
+        <span id="span2"></span>
+    </div>
+</form>
+
+</body>
+</html>

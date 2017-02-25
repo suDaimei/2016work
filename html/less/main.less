@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@input_height: 28px;
+@input_width: 250px;
+@input_margin: 15px 0;
+body {
+  background-color: #F4F4F4;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+img{
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+@import "login.less";
+@import "nav.less";
+.con_img {
+  height: 410px;
+  width: 100%;
+  background: url("../img/con_img.jpg");
+}
+
+.login_big {
+  width: 1000px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+.login_bg {
+  width: 285px;
+  height: 300px;
+  background-color: #7f755c;
+  float: right;
+  margin-top: 50px;
+}
+.login_bg ul{
+  width: 250px;
+  margin: 0 auto;
+}
+.login_bg h4 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: solid #c4c1b4 1px;
+}
+
+.impor {
+  width: 238px;
+  margin-top: 16px;
+}
+.login_bg input{
+  height: 18px;
+  line-height: 18px;
+  padding: 6px 6px;
+  border:none;
+}
+
+.error {
+  color: #fe7836;
+  background: url("../img/icon.png") left 0 no-repeat;
+  height: 25px;
+  line-height: 45px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#verify {
+  margin-bottom: 10px;
+}
+#verify img{
+  padding-left:10px;
+}
+
+.verify {
+  width: 80px;
+  height: @input_height;
+  float: left;
+  border: #605941 solid 1px;
+}
+
+
+input:focus {
+  border:none;
+}
+
+.find {
+  clear: left;
+}
+
+.find a {
+  color: #fff;
+}
+
+ .forget {
+  float: right;
+   padding-right: 10px;
+}
+ .reg{
+   padding-left: 10px;
+ }
+
+.login {
+  width: @input_width;
+  height: 35px;
+  border: none;
+  background: #ee5520;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 18px;
+  text-shadow: 3px 1px 1px #d82209;
+  letter-spacing: 15px;
+  cursor: pointer;
+  &:hover{
+    background-color: #E44108 ;
+  }
+}
+
+.main span a{
+  display: inline-block;
+  margin-left:75px;
+  margin-top: 15px;
+  height: 160px;
+}
+
+#login .k {
+  color: #b4b4b4;
+}
+
+#login .k.selected {
+  color: #b4b4b4;
+}
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.main_text {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: #e4e4e4 solid 1px;
+  color: #383838;
+  font-weight: 400;
+  font-size: 14px;
+  width: 1000px;
+}
+.main h3{
+  font-family: "微软雅黑";
+}
+
+.main_img {
+  border-top: #fafafa solid 1px;
+  border-bottom: #cccccc solid 1px;
+  height: 175px;
+  line-height: 175px;
+  a{
+    &:hover{
+      background-position: 0 0;
+      background-image: url("../img/img_over.png");
+      background-repeat: no-repeat;
+      }
+  }
+}
+.main_ing a:hover{
+  background-image: url("../img/over.png");
+}
+
+.main_img li {
+  float: left;
+  height: 150px;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 35px;
+}
+
+.main_img li a {
+  width: 150px;
+  height: 150px;
+}
+
+.first {
+  margin-left: 40px;
+}
+
+.clear {
+  clear: both;
+}
+@import "footer.less";

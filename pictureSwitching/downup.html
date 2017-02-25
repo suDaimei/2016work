@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background-color: #82878A;
+        }
+
+        .blink_wrap {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            cursor: pointer;
+            width: 73px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .blink_wrap .blink {
+            margin-top: 30px;
+            -webkit-animation: slide 1s infinite linear;
+            -moz-animation: slide 1s infinite linear;
+            -o-animation: slide 1s infinite linear;
+            animation: slide 1s infinite linear;
+            cursor: pointer;
+            background: url("image/icon-sale-new.png") 0 0;
+            width: 73px;
+            height: 29px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="blink_wrap">
+    <div class="blink"></div>
+</div>
+<script src="js/jquery.1.10.2.js"></script>
+<script>
+    $(function () {
+        var _IE = function () {
+            for (var a = 3, b = document.createElement("div"), c = b.getElementsByTagName("i"); b.innerHTML = "<!--[if gt IE " + ++a + "]><i></i><![endif]-->", c[0];);
+            return a > 4 ? a : !1;
+
+
+        }();
+        !function () {
+            function a() {
+                var e = 10;
+                0 == b ? c++ : c--, c > 60 && (b = 1), 30 > c && (b = 0, e = 3000), d.css("margin-top", c), setTimeout(function () {
+                    a()
+                }, e)
+                console.log(c);
+            }
+
+            if (8 !== _IE) {
+                var b = 0, c = 30, d = $(".blink:first");
+                a()
+            }
+        }();
+
+
+
+
+
+        //***
+//        var b = 0, c = 30, d = $(".blink");
+//        function a() {
+//            var e = 10;
+//            0 == b ? c++ : c--, c > 60 && (b = 1), 30 > c && (b = 0, e = 500), d.css("margin-top", c), setTimeout(function () {
+//                a()
+//            }, e)
+//        }
+//
+//        a()
+    })
+</script>
+</body>
+</html>

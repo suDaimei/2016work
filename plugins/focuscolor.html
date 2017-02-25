@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,div,ul,li{margin: 0; padding: 0;}
+        .divframe{width:500px; border: solid 1px #000;}
+        .divtitle{
+            background-color: #34495E;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+        }
+        #ul li{list-style: none;
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        #ul li span{
+            width: 80px;
+            text-align: center;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="divframe">
+    <div class="divtitle">
+        对象级别的插件
+    </div>
+    <div class="divcontent">
+        <ul id="ul">
+            <li><span>流式</span><span>男</span></li>
+            <li><span>多多</span><span>女</span></li>
+            <li><span>德昂</span><span>男</span></li>
+        </ul>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.lifocuscolor.js"></script>
+<script type="text/javascript">
+    $(function(){//使用focuscolor插件
+//        $("#ul").focuscolor("#5DA2E5");
+        $("#ul").focuscolor();
+    });
+
+//    $(function(){//jquery编写
+//        $("#ul").find("li").each(function(){
+//            $(this).mouseover(function(){
+//                $(this).css('background-color','red');
+//            }).mouseout(function(){
+//                $(this).css('background-color','#fff');
+//            })
+//        });
+//    });
+</script>
+
+</body>
+</html>
